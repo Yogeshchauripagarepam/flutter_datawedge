@@ -104,7 +104,7 @@ class FlutterDatawedgePlugin: FlutterPlugin, MethodCallHandler, StreamHandler {
     val barcodeConfig = Bundle()
     barcodeConfig.putString("PLUGIN_NAME", "BARCODE")
     //  This is the default but never hurts to specify
-    barcodeConfig.putString("RESET_CONFIG", "true")
+    barcodeConfig.putString("RESET_CONFIG", "false")
 
     val barcodeProps = Bundle()
     barcodeConfig.putBundle("PARAM_LIST", barcodeProps)
@@ -122,7 +122,7 @@ class FlutterDatawedgePlugin: FlutterPlugin, MethodCallHandler, StreamHandler {
 
     val intentConfig = Bundle()
     intentConfig.putString("PLUGIN_NAME", "INTENT")
-    intentConfig.putString("RESET_CONFIG", "true")
+    intentConfig.putString("RESET_CONFIG", "false")
 
     val intentProps = Bundle()
     intentProps.putString("intent_output_enabled", "true")
