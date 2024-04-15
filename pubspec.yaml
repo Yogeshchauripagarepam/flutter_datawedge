@@ -1,0 +1,27 @@
+name: flutter_datawedge
+description: A Flutter package to communicate with Zebra DataWedge scanners using the DataWedge Intent API
+version: 1.2.0
+homepage: https://github.com/circus-kitchens/flutter_datawedge
+repository: https://github.com/circus-kitchens/flutter_datawedge
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: '>=2.5.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  strict_json: ^2.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^2.0.1
+
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.circuskitchens.flutter_datawedge
+        pluginClass: FlutterDatawedgePlugin
